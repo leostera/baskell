@@ -1,0 +1,220 @@
+
+==================== FINAL INTERFACE ====================
+2016-06-16 17:13:29.923907 UTC
+
+interface main@main:Main 7102
+  interface hash: 446fda23f04fc17765b597ebd1c011ff
+  ABI hash: 15a498fb21dddaeafab86f52da03e0d7
+  export-list hash: 9b579aeb62b0d6fce848cf2cc55b8c76
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 347016369b3177e65fb731f1a72ac20c
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+  Main.parseArgs
+  Main.BaskellErrors{Main.TooFewArgs Main.TooManyArgs}
+module dependencies: Parser
+package dependencies: array-0.5.1.0@array_E0sTtauuKsGDLZoT7lTbgZ
+                      base-4.8.1.0* binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd
+                      bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH
+                      containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN
+                      deepseq-1.4.1.1@deeps_LbCWUlehDDeLxurARKDH5o ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU
+                      parsec-3.1.9@parse_AqYX0bfDxT5E4cHIEfeJIN
+                      text-1.2.2.0@text_BKzOMwCPkuv5n8xwLM3CQG
+                      transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X
+orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+         binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Builder
+         text-1.2.2.0@text_BKzOMwCPkuv5n8xwLM3CQG:Data.Text
+         text-1.2.2.0@text_BKzOMwCPkuv5n8xwLM3CQG:Data.Text.Lazy
+         text-1.2.2.0@text_BKzOMwCPkuv5n8xwLM3CQG:Data.Text.Show
+         transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.Trans.Error
+family instance modules: base-4.8.1.0:Control.Applicative
+                         base-4.8.1.0:Data.Either base-4.8.1.0:Data.Functor.Identity
+                         base-4.8.1.0:Data.Monoid base-4.8.1.0:Data.Type.Equality
+                         base-4.8.1.0:Data.Void base-4.8.1.0:GHC.Exts
+                         base-4.8.1.0:GHC.Generics
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntMap.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntSet.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Sequence
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Set.Base
+                         text-1.2.2.0@text_BKzOMwCPkuv5n8xwLM3CQG:Data.Text
+                         text-1.2.2.0@text_BKzOMwCPkuv5n8xwLM3CQG:Data.Text.Lazy
+import  -/  base-4.8.1.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.1.0:GHC.Show b8c65ca3124f92a166c9f05120382442
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  base-4.8.1.0:System.Environment 946ddc2d7c48138bb213316abaff2a8d
+import  -/  base-4.8.1.0:System.IO 29a6f3d7c8ad8a4e6200d8bbb6e70aae
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  Parser 83aa8d78fd23f7792bae350f21833ecb
+  exports: c423f29aac2809d2be83d79fe610caa7
+  parse fc2c86c99c990ac47619ec64e747c873
+982509d3eaca8ac1aa9b165b1afc59da
+  $fShowBaskellErrors :: GHC.Show.Show Main.BaskellErrors
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.BaskellErrors
+                  Main.$fShowBaskellErrors_$cshowsPrec
+                  Main.$fShowBaskellErrors_$cshow
+                  Main.$fShowBaskellErrors_$cshowList -}
+982509d3eaca8ac1aa9b165b1afc59da
+  $fShowBaskellErrors1 ::
+    Main.BaskellErrors -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ x :: Main.BaskellErrors
+                   s :: GHC.Base.String[OneShot] ->
+                 case x of wild {
+                   Main.TooFewArgs
+                   -> GHC.Base.++ @ GHC.Types.Char Main.$fShowBaskellErrors3 s
+                   Main.TooManyArgs
+                   -> GHC.Base.++ @ GHC.Types.Char Main.$fShowBaskellErrors2 s }) -}
+5c3628038f936f1b3bc020e207d5bf20
+  $fShowBaskellErrors2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "TooManyArgs"#) -}
+79284ffc5dc0e1d10e194f78eb860c5b
+  $fShowBaskellErrors3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "TooFewArgs"#) -}
+982509d3eaca8ac1aa9b165b1afc59da
+  $fShowBaskellErrors_$cshow :: Main.BaskellErrors -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Main.BaskellErrors ->
+                 case ds of wild {
+                   Main.TooFewArgs -> Main.$fShowBaskellErrors3
+                   Main.TooManyArgs -> Main.$fShowBaskellErrors2 }) -}
+982509d3eaca8ac1aa9b165b1afc59da
+  $fShowBaskellErrors_$cshowList ::
+    [Main.BaskellErrors] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ ls :: [Main.BaskellErrors] s :: GHC.Base.String ->
+                 GHC.Show.showList__
+                   @ Main.BaskellErrors
+                   Main.$fShowBaskellErrors1
+                   ls
+                   s) -}
+982509d3eaca8ac1aa9b165b1afc59da
+  $fShowBaskellErrors_$cshowsPrec ::
+    GHC.Types.Int -> Main.BaskellErrors -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ ds :: GHC.Types.Int
+                   x :: Main.BaskellErrors
+                   s :: GHC.Base.String ->
+                 case x of wild {
+                   Main.TooFewArgs
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b c :: GHC.Types.Char -> b -> b[OneShot] n :: b[OneShot] ->
+                         GHC.Base.foldr @ GHC.Types.Char @ b c n Main.$fShowBaskellErrors3)
+                        s
+                   Main.TooManyArgs
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b c :: GHC.Types.Char -> b -> b[OneShot] n :: b[OneShot] ->
+                         GHC.Base.foldr @ GHC.Types.Char @ b c n Main.$fShowBaskellErrors2)
+                        s }) -}
+982509d3eaca8ac1aa9b165b1afc59da
+  data BaskellErrors = TooFewArgs | TooManyArgs
+    Promotable
+55c1cb54b6e85ab7c33f20941e6a5797
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+bb4d081c7ac40cf557c7f9d273817813
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case System.Environment.getArgs1 s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.FD.openFile1
+                        (Main.parseArgs ipv1)
+                        GHC.IO.IOMode.ReadMode
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.IO.Handle.Text.hGetContents1
+                        ipv3
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        (GHC.Show.$fShow[]_$s$cshow1 ipv5)
+                        GHC.Types.True
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   (case (Text.Parsec.Prim.runPT
+                            @ GHC.Base.String
+                            @ ()
+                            @ Data.Functor.Identity.Identity
+                            @ Parser.Instruction
+                            @ GHC.Types.Char
+                            (Text.Parsec.String.$s$fStream[]mtok @ GHC.Types.Char)
+                            Parser.parse2
+                              `cast`
+                            (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                                      <[GHC.Types.Char]>_R
+                                      <()>_R
+                                      <Data.Functor.Identity.Identity>_R
+                                      <Parser.Instruction>_R))
+                            GHC.Tuple.()
+                            (GHC.Types.[] @ GHC.Types.Char)
+                            ipv5)
+                           `cast`
+                         (Data.Functor.Identity.NTCo:Identity[0]
+                              <Data.Either.Either
+                                 Text.Parsec.Error.ParseError Parser.Instruction>_R) of wild {
+                      Data.Either.Left b1
+                      -> GHC.Base.++
+                           @ GHC.Types.Char
+                           Data.Either.$fShowEither3
+                           (case b1 of ww { Text.Parsec.Error.ParseError ww1 ww2 ->
+                            case ww1 of ww3 { Text.Parsec.Pos.SourcePos ww4 ww5 ww6 ->
+                            Text.Parsec.Error.$w$cshow ww4 ww5 ww6 ww2 } })
+                      Data.Either.Right b1
+                      -> GHC.Base.++
+                           @ GHC.Types.Char
+                           Data.Either.$fShowEither2
+                           (case b1 of ww2 { Parser.Line ww3 ww4 ->
+                            Parser.$w$cshowsPrec1
+                              11
+                              ww3
+                              ww4
+                              (GHC.Types.[] @ GHC.Types.Char) }) })
+                   GHC.Types.True
+                   ipv6 } } } }) -}
+cbf40ebd6b143f96de7d0ec3982bb047
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+a4b9ffc020ba7e8691e84462af178172
+  parseArgs :: [GHC.Base.String] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: [GHC.Base.String] ->
+                 case ds of wild {
+                   [] -> Main.parseArgs1
+                   : file ds1
+                   -> case ds1 of wild1 {
+                        [] -> file : ipv ipv1 -> Main.parseArgs1 } }) -}
+117324c60f4112ef94243d6144435457
+  parseArgs1 :: GHC.Base.String
+  {- Strictness: b -}
+instance GHC.Show.Show [Main.BaskellErrors]
+  = Main.$fShowBaskellErrors
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
