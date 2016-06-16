@@ -16,7 +16,7 @@ main = do
   args <- getArgs
   let filename = parseArgs args
   content <- readFile filename
-  run $ parse content
+  either print run (parse content)
 
 parseArgs :: [String] -> String
 parseArgs [file] = file
