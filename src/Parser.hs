@@ -1,4 +1,9 @@
-module Parser (parse) where
+module Parser
+  (
+   parse,
+   Instruction (..),
+   Expression  (..)
+  ) where
 
 import qualified Text.Parsec as P
 import Text.Parsec.String (Parser)
@@ -8,8 +13,8 @@ import Text.Parsec.Combinator (many1)
 data Instruction = Line Int Expression deriving Show
 data Expression  = Print String deriving Show
 
-parse :: String -> Either P.ParseError Instruction
-parse = P.parse instruction ""
+parse :: String -> Either P.ParseError [Instruction]
+parse = mapM (P.parse instruction "") . lines
 
 instruction :: Parser Instruction
 instruction = do

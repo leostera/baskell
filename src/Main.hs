@@ -3,6 +3,7 @@ module Main where
 import System.Environment (getArgs)
 
 import Parser (parse)
+import Interpreter (run)
 
 data BaskellErrors = TooFewArgs | TooManyArgs
 
@@ -15,9 +16,7 @@ main = do
   args <- getArgs
   let filename = parseArgs args
   content <- readFile filename
-  print content
-  let parsedBasic = parse content
-  print parsedBasic
+  run $ parse content
 
 parseArgs :: [String] -> String
 parseArgs [file] = file
