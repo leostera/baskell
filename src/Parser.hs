@@ -10,6 +10,8 @@ import Text.Parsec.String (Parser)
 import Text.Parsec.Char (anyChar, digit, spaces, string, alphaNum)
 import Text.Parsec.Combinator (many1)
 
+import qualified Data.Map as Map
+
 data Instruction = Line Int Expression deriving Show
 data Expression  = Print String deriving Show
 
