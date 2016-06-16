@@ -2,7 +2,7 @@ module Parser (parse) where
 
 import qualified Text.Parsec as P
 import Text.Parsec.String (Parser)
-import Text.Parsec.Char (digit, spaces, string, alphaNum)
+import Text.Parsec.Char (anyChar, digit, spaces, string, alphaNum)
 import Text.Parsec.Combinator (many1)
 
 data Instruction = Line Int Expression deriving Show
@@ -22,5 +22,5 @@ expression :: Parser Expression
 expression = do
   string "PRINT"
   spaces
-  args <- many1 alphaNum
-  return $ Print args
+  args <- many1 anyChar
+  return $ Print (read args)
